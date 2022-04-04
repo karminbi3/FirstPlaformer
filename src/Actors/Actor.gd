@@ -10,5 +10,3 @@ var velocity: = Vector2.ZERO
 
 func _physics_process(delta: float) -> void:
 	velocity.y += gravity * delta
-	velocity.y = max(velocity.y, speed.y)
-	velocity = move_and_slide(velocity)
